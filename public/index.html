@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas de Hoteles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Reservas de Hoteles</h1>
+        <nav>
+            <button id="btnLogin">Iniciar Sesión</button>
+            <button id="btnRegistro">Registrarse</button>
+            <button id="btnReservas" class="hidden">Mis Reservas</button>
+            <button id="btnLogout" class="hidden">Cerrar Sesión</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Formulario de Registro/Inicio de Sesión -->
+        <section id="seccionAuth" class="auth-form">
+            <h2 id="authTitle">Iniciar Sesión</h2>
+            <form id="formAuth">
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit" id="btnAuth">Iniciar Sesión</button>
+            </form>
+            <p id="authToggle">¿No tienes una cuenta? <a href="#" id="toggleAuth">Regístrate aquí</a>.</p>
+        </section>
+
+        <!-- Formulario de Reserva -->
+        <section id="seccionReserva" class="hidden">
+            <h2>Reservar Habitación</h2>
+            <form id="formReserva">
+                <label for="tipoHabitacion">Tipo de Habitación:</label>
+                <select id="tipoHabitacion">
+                    <option value="individual">Individual</option>
+                    <option value="doble">Doble</option>
+                    <option value="suite">Suite</option>
+                </select>
+
+                <label for="fechaEntrada">Fecha de Entrada:</label>
+                <input type="date" id="fechaEntrada" required>
+
+                <label for="fechaSalida">Fecha de Salida:</label>
+                <input type="date" id="fechaSalida" required>
+
+                <label for="servicios">Servicios Adicionales:</label>
+                    <div class="servicios" id="servicios">
+                        <label><input type="checkbox" id="desayuno"> Desayuno</label>
+                        <label><input type="checkbox" id="spa"> Spa</label>
+                        <label><input type="checkbox" id="transporte"> Transporte</label>
+                    </div>
+
+                <button type="submit">Reservar</button>
+            </form>
+        </section>
+
+        <!-- Historial de Reservas -->
+        <section id="seccionHistorial" class="hidden">
+            <h2>Mis Reservas</h2>
+            <table id="tablaReservas">
+                <thead>
+                    <tr>
+                        <th>Habitación</th>
+                        <th>Fecha Entrada</th>
+                        <th>Fecha Salida</th>
+                        <th>Servicios</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Las reservas se cargarán aquí dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Reservas de Hoteles. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

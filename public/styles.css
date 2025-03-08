@@ -1,0 +1,129 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #6200ea;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+nav button {
+    background-color: #3700b3;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+nav button:hover {
+    background-color: #7c4dff;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Formularios */
+.auth-form, #seccionReserva {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form h2, #seccionReserva h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #6200ea;
+}
+
+.auth-form input, #seccionReserva input, #seccionReserva select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.auth-form button, #seccionReserva button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.auth-form button:hover, #seccionReserva button:hover {
+    background-color: #7c4dff;
+}
+
+.servicios {
+    margin-bottom: 1rem;
+}
+
+.servicios label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Historial de Reservas */
+#seccionHistorial {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#tablaReservas {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tablaReservas th, #tablaReservas td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#tablaReservas th {
+    background-color: #6200ea;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+}
